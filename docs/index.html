@@ -3,11 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harrish - Software Engineer Portfolio</title>
+    <meta name="description" content="Harrish Dhaithya — Software Engineer specializing in secure, high-performance software. MSc Computing @ DCU, Ex-Zoho.">
+    <meta name="theme-color" content="#0a0a12">
+    <title>Harrish Dhaithya — Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Scroll progress bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Custom cursor spotlight -->
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+    <!-- Animated aurora background -->
+    <div class="aurora" aria-hidden="true">
+        <span class="aurora-blob blob-1"></span>
+        <span class="aurora-blob blob-2"></span>
+        <span class="aurora-blob blob-3"></span>
+        <div class="grid-overlay"></div>
+    </div>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -32,11 +50,20 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
+                <span class="hero-badge"><span class="status-dot"></span> Open to new opportunities</span>
                 <h1 class="hero-title">Hi, I'm <span class="highlight">Harrish Dhaithya</span></h1>
-                <h2 class="hero-subtitle">Software Engineer</h2>
-                <p class="hero-description">
-                    MSc Computing Student at Dublin City University | Ex-Zoho | Specializing in Secure Software Engineering
-                </p>
+                <h2 class="hero-subtitle">I build <span class="typed-role" id="typedRole"></span><span class="type-caret" aria-hidden="true"></span></h2>
+
+                <div class="terminal" id="terminal">
+                    <div class="terminal-bar">
+                        <span class="t-dot t-red"></span>
+                        <span class="t-dot t-yellow"></span>
+                        <span class="t-dot t-green"></span>
+                        <span class="terminal-title">harrish — zsh — 80×24</span>
+                    </div>
+                    <div class="terminal-body" id="terminalBody" aria-hidden="true"></div>
+                </div>
+
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary">Get In Touch</a>
                     <a href="Harrish___SWE_Resume.pdf" class="btn btn-secondary" download>Download Resume</a>
@@ -49,6 +76,9 @@
                 </div>
             </div>
         </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+            <span class="mouse"><span class="wheel"></span></span>
+        </a>
     </section>
 
     <!-- About Section -->
@@ -387,6 +417,7 @@
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
             <div class="contact-content">
+                <h3 class="contact-cta">Want to <span class="cta-word">build</span> or <span class="cta-word">scale</span> a system?<br>Let's talk.</h3>
                 <p>I'm currently pursuing my MSc at Dublin City University and open to new opportunities, collaborations, and interesting projects. Whether you have a question or just want to connect, feel free to reach out!</p>
                 <div class="contact-info">
                     <a href="mailto:harrishdhaithya.ka@gmail.com" class="contact-item">
