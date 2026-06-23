@@ -1081,6 +1081,15 @@ section {
     .hero-buttons { flex-direction: column; align-items: center; }
     .btn { width: 100%; max-width: 280px; justify-content: center; }
     .cursor-glow { display: none; }
+
+    /* Justify body text for cleaner reading on phones */
+    .about-text p,
+    .project-content p,
+    .contact-content p {
+        text-align: justify;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+    }
 }
 
 @media (max-width: 480px) {
